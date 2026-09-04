@@ -1,0 +1,20 @@
+# shard.yml
+name: acp
+version: 0.1.0
+
+authors:
+  - shpeckman
+  
+description: |
+  Agent Client Protocol (ACP) library for Crystal — build agents or
+  embed them in clients over JSON-RPC 2.0 stdio (schema v1).
+
+license: MIT
+
+crystal: ">= 1.21.0"
+
+targets:
+  example-echo-agent:
+    main: examples/echo_agent.cr
+  example-echo-client:
+    main: examples/echo_client.cr
